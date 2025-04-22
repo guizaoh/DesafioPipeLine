@@ -15,11 +15,11 @@ jobs:
         run: sudo apt update && sudo apt install build-essential -y
 
       - name: Compilar o programa
-        run: gcc desafio.c -o programa
+        run: gcc soma.c -o programa
 
       - name: Executar o programa
         run: ./programa
 
       - name: Executar testes automatizados
-        run:  gcc -o teste soma.c
+        run:  gcc -o teste desafio.c
               ./teste
